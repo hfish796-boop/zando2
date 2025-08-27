@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.navigation {
+  width: 100%;
+
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.menu {
+  width: 90%;
+  height: 50px;
+  /* background-color: gray; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+.menu-left {
+  width: 30%;
+
+  height: 100%;
+}
+.menu-center {
+  width: 25%;
+  /* background-color: aqua; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-right {
+  width: 45%;
+
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+/* menu left  */
+.menu-left > ul {
+  display: flex;
+  gap: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  height: 100%;
+  align-items: center;
+}
+.menu-left > ul > li {
+  /* background-color: #eee;    */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.menu-left > ul > li:hover {
+  background-color: #c3c2c2;
+  cursor: pointer;
+}
+
+/* menu center
+
+*/
+.menu-center > img {
+  width: 130px;
+  /* height: 100%; */
+}
+
+/* menu right */
+.menu-right > ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.menu-right > ul > li {
+  /* background-color: rgb(187, 187, 188); */
+}
+
+/* search field  */
+.menu-right > ul > li:first-child {
+  height: 100%;
+  padding: 8px 0;
+}
+.txt-search {
+  height: 100%;
+  /* background-color: red; */
+  border: 1px solid gray;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.txt-search > input {
+  height: 100%;
+  border: none;
+  background-color: #eee;
+}
+.txt-search > input:focus {
+  outline: none;
+}
+.txt-search > span {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.menu-right > ul > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.menu-right > ul > li:hover:not(:first-child) {
+  background-color: #c3c2c2;
+  cursor: pointer;
+}
