@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="./new1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
+<style>
+    
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 <body>
      <nav class="navigation">
         <nav class="menu">
@@ -36,7 +60,6 @@
             </li>
             <li>
                 <i class="fa-regular fa-bell"></i>
-                
             </li>
             <li>
                 <i class="fa-regular fa-heart"></i>
@@ -52,5 +75,27 @@
      </div>
      </nav>
      </nav>
+     <div class="slice">
+        <swiper-container 
+  class="mySwiper" 
+  pagination="true" 
+  pagination-clickable="true" 
+  navigation="true" 
+  space-between="30"
+    centered-slides="true" 
+    autoplay-delay="2500" 
+    autoplay-disable-on-interaction="false">
+    <swiper-slide><img src="https://www.bortonoverseas.com/wp-content/uploads/Angkor-Wat-Main.jpg" alt=""></swiper-slide>
+    <swiper-slide><img src="" alt=""></swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>
