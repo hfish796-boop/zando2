@@ -62,18 +62,15 @@ ul {
 
 .menu-center {
   width: 25%;
-  /* background-color: aqua; */
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* menu center
 
-*/
 .menu-center > img {
   width: 130px;
-  /* height: 100%; */
+  
 }
 
 .menu-right {
@@ -139,6 +136,30 @@ ul {
   width: 90%;
   margin: auto;
   height: 600px;
-  background-color: yellow;
   
+  
+}
+.item-slid{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.btn-container{
+  position: absolute;
+  bottom: 10%;
+  left: 36%;
+  display: flex;
+  gap: 40px;
+}
+.btn-container > button{
+  padding: 15px 25px; 
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  box-shadow: rgba(201, 201, 201, 0.05);
+  outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
 }
