@@ -1,0 +1,42 @@
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 100px 100px ;
+    grid-template-columns: auto 600px auto;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "menu main right"
+    "footer footer footer"
+    ;
+ }
+header{
+    background-color: red;
+    grid-area: header;
+}
+.menu{
+    background-color: blue;
+    grid-area: menu;
+}
+.main{
+    background-color: skyblue;
+    grid-area: main;
+}
+.right{
+    background-color: brown;
+    grid-area: right;
+}
+footer{
+  background-color: chartreuse;
+  grid-area: footer;
+}
+.main-1{
+    background-color: blueviolet;
+    grid-area: main-1;
+}
+.main-2{
+    background-color: pink;
+    grid-area: main-2;
+}
+
+

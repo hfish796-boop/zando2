@@ -1,0 +1,75 @@
+.a{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: yellow;
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.b{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: purple;
+    animation-name: move2;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    top: 0;
+
+}
+@keyframes move1{
+    0%{
+     left: 0;
+     top: 0;
+     background-color: red;
+    }
+    25%{
+        left: 300px;
+        top: 0;
+        background-color: pink;
+    }
+    50%{
+        left: 300px;
+        top: 500px;
+        background-color: brown;
+    }
+    75%{
+        left: 0;
+        top: 500px;
+        background-color: blue;
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background-color: orange;
+    }
+}
+@keyframes move2{
+    0%{
+     left: 0;
+     top: 0;
+     background-color: slategrey;
+    }
+    25%{
+        left: 300px;
+        top: 0;
+        background-color: palevioletred;
+    }
+    50%{
+        left: 300px;
+        top: 500px;
+        background-color: skyblue;
+    }
+    75%{
+        left: 0;
+        top: 500px;
+        background-color: black;
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background-color: greenyellow;
+    }
+}

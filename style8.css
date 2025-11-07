@@ -1,0 +1,76 @@
+@media (min-width: 1024px) and (max-width: 1500px){
+    .box{
+        display: grid;
+        grid-template-rows: 50px 300px 80px 80px 100px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "header menu menu menu"
+        "hero hero hero hero"
+        "main main space image"
+        "main main space extra"
+        "banner banner banner banner"
+        ;
+    }
+}
+header {
+    background-color: black;
+    grid-area: header;
+}
+.menu{
+    background-color: red;
+    grid-area: menu;
+}
+.hero {
+    background-color: blue;
+    grid-area: hero;
+}
+main {
+    background-color: pink;
+    grid-area: main;
+}
+.space {
+    background-color: gray;
+    grid-area: space;
+}
+.image {
+    background-color: greenyellow;
+    grid-area: image;
+}
+.extra {
+    background-color: green;
+    grid-area: extra;
+}
+.banner {
+    background-color: orange;
+    grid-area: banner;
+}
+@media (min-width: 0) and (max-width: 768px){
+    .box{
+        display: grid;
+        grid-template-rows: 30px 40px 60px 60px 50px 50px 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "hero"
+        "main"
+        "banner"
+        "extra"
+        "image"
+        ;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .box {
+        display: grid;
+        grid-template-rows: 100px 200px 200px 150px 150px;
+        grid-template-columns: 1fr 500px 1fr;
+        grid-template-areas:
+        "header header header"
+        "hero hero hero"
+        "menu main main"
+        "menu banner banner"
+        "menu extra image"
+        
+    }
+}

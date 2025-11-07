@@ -1,0 +1,52 @@
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px 300px 40px 40px 50px;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-areas: 
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main space image"
+    "main main space extra"
+    "banner banner banner banner"
+    ;
+}
+header{
+    background-color: blue;
+    grid-area: header;
+}
+.menu{
+    background-color: red;
+    grid-area: menu;
+}
+.hero{
+    background-color: yellow;
+    grid-area: hero;
+}
+.main{
+    background-color: gray;
+    grid-area: main;
+}
+.space{
+    background-color: orange;
+    grid-area: space;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100% 100%;
+    grid-template-areas: 
+    "space image"
+    "space extra"
+    ;
+}
+footer{
+    background-color: blueviolet;
+    grid-area: banner;
+}
+.image{
+    background-color: aqua;
+    grid-area: image;
+}
+.extra{
+    background-color: pink;
+    grid-area: extra;
+}
